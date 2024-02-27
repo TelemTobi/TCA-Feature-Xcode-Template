@@ -6,7 +6,7 @@ import Foundation
 import ComposableArchitecture
 
 @Reducer
-class ___VARIABLE_productName___Store {
+struct ___VARIABLE_productName___Store {
     
     @ObservableState
     struct State: Equatable {
