@@ -14,11 +14,10 @@ struct ___VARIABLE_productName___View: View {
     var body: some View {
         WithPerceptionTracking {
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
+                Text("🐣")
+                Text("___VARIABLE_productName___")
             }
+            .font(.largeTitle)
         }
     }
 }
