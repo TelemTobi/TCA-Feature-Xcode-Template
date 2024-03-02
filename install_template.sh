@@ -3,8 +3,8 @@
 PURPLE=$(tput setaf 5)
 NC=$(tput sgr0)
 
-echo "${PURPLE}Cloning Viper Xcode template${NC}"
-git clone https://github.com/TelemTobi/TCA-Module-Template.git /tmp/xcode_template
+echo "${PURPLE}Cloning TCA Feature Xcode template${NC}"
+git clone https://github.com/TelemTobi/TCA-Feature-Xcode-Template.git /tmp/xcode_template
 
 echo "${PURPLE}Removing existing template folder${NC}"
 sudo rm -rf /Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/File\ Templates/Modules/TCA\ Feature.xctemplate
