@@ -21,7 +21,7 @@ struct ___VARIABLE_productName___Store {
         case view(View)
     }
     
-    private let interactor = ___VARIABLE_productName___Interactor()
+    @Dependency(\.<#___VARIABLE_productName___Interactor#>) private var interactor
     
     var body: some ReducerOf<Self> {
         Reduce { state, action in
@@ -30,5 +30,11 @@ struct ___VARIABLE_productName___Store {
                 return .none
             }
         }
+    }
+}
+
+extension DependencyValues {
+    fileprivate var <#___VARIABLE_productName___Interactor#>: ___VARIABLE_productName___Interactor {
+        get { self[___VARIABLE_productName___Interactor.self] }
     }
 }
