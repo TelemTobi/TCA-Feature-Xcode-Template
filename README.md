@@ -8,7 +8,7 @@ This template is designed to streamline your workflow by integrating seamlessly 
 <p align="center">
   <img height="220" src="Resources/screenshot1.png">
   <img height="220" src="Resources/screenshot2.png">
-  <img height="220" src="Resources/screenshot3.png">
+  <img height="200" src="Resources/screenshot3.png">
 </p>
 
 ## Key Features
