@@ -18,23 +18,29 @@ struct ___VARIABLE_productName___Store {
             
         }
         
+        enum Navigation {
+            
+        }
+        
         case view(View)
+        case navigation(Navigation)
     }
-    
-    @Dependency(\.<#___VARIABLE_productName___Interactor#>) private var interactor
-    
+        
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
-            case .view:
+            case let .view(viewAction):
+                return reduceViewAction(&state, viewAction)
+                
+            case .navigation:
                 return .none
             }
         }
     }
-}
-
-extension DependencyValues {
-    fileprivate var <#___VARIABLE_productName___Interactor#>: ___VARIABLE_productName___Interactor {
-        get { self[___VARIABLE_productName___Interactor.self] }
+    
+    private func reduceViewAction(_ state: inout State, _ action: Action.View) -> Effect<Action> {
+        switch action {
+            
+        }
     }
 }
