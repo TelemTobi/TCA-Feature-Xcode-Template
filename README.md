@@ -15,7 +15,6 @@ This template is designed to streamline your workflow by integrating seamlessly 
 
 - [x] **View**: Responsible for presenting the UI and dispatching user actions to the store.
 - [x] **Store**: Houses the business logic and state mutations, adhering to The Composable Architecture principles.
-- [x] **Interactor**: Acts as a mediator, managing the feature's dependencies and facilitating their interaction with the store.
 
 ## Installation
 
