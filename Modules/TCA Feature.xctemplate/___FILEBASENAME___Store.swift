@@ -13,12 +13,12 @@ struct ___VARIABLE_productName___Store {
         
     }
     
-    enum Action: ViewAction {
+    enum Action: ViewAction, Equatable {
         enum View {
             
         }
         
-        enum Navigation {
+        enum Navigation: Equatable {
             
         }
         
@@ -42,5 +42,11 @@ struct ___VARIABLE_productName___Store {
         switch action {
             
         }
+    }
+}
+
+extension DependencyValues {
+    fileprivate var interactor: ___VARIABLE_productName___Interactor {
+        get { self[___VARIABLE_productName___Interactor.self] }
     }
 }

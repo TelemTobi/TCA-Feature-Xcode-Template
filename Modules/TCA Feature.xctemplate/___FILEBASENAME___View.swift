@@ -2,7 +2,6 @@
 //  ___FILEHEADER___
 //
 
-
 import SwiftUI
 import ComposableArchitecture
 
@@ -12,13 +11,11 @@ struct ___VARIABLE_productName___View: View {
     let store: StoreOf<___VARIABLE_productName___Store>
     
     var body: some View {
-        WithPerceptionTracking {
-            VStack {
-                Text("🐣")
-                Text("___VARIABLE_productName___")
-            }
-            .font(.largeTitle)
+        VStack {
+            Text("🐣")
+            Text("___VARIABLE_productName___")
         }
+        .font(.largeTitle)
     }
 }
 
